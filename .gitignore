@@ -1,0 +1,48 @@
+# Local environment. Recreate with `uv sync` from pyproject.toml and uv.lock.
+.venv/
+.uv-cache/
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Notebook and editor scratch
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# Experiment logs and local caches
+wandb/
+mlruns/
+lightning_logs/
+runs/
+*.log
+.cache/
+
+# Weights and array dumps. Commit small, intentional figures separately.
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# Reading notes stay; copyrighted papers do not.
+papers/**/*.pdf
